@@ -22,30 +22,41 @@
     });
     // console.log(html)
     for(let i=0; i<select.length; i++){
-      select[i].innerHTML = html;
+      select[i].innerHTML = '<option hidden disabled selected value> -- select an option -- </option>'+html;
 
     };
 
-    input[0].addEventListener('keyup', ()=>{
-      input[1].value = (input[0].value * rates[select[1].value]/ rates[select[0].value]).toFixed(2);
+    function convert(a,b){
 
-      
-    //   licznik.textContent = input[0].value
-    });
-    input[1].addEventListener('keyup', ()=>{
-      input[0].value = (input[1].value * rates[select[0].value]/ rates[select[1].value]).toFixed(2);
-    });
+      input[a].value = (input[b].value * rates[select[a].value]/ rates[select[b].value]).toFixed(2);
+      input[0].value === "0.00"? input[0].value='': console.log('lol')
+
+    };
+    function dontshowCurrency(){
+      (select[0].value == "" || select[1].value == "") ? licznik.textContent='' : console.log('siema') 
+     
+    }
+
+    input[0].addEventListener('keyup', ()=> convert(1,0));
+    input[1].addEventListener('keyup', ()=> convert(0,1));
+
+
     select[0].addEventListener('change', ()=>{
-      input[1].value = (input[0].value * rates[select[1].value]/ rates[select[0].value]).toFixed(2);
-      licznik.textContent = `1  ${select[0].value} = ${(rates[select[0].value]/ rates[select[1].value]).toFixed(2)} ${select[1].value}`
+
+      convert(1,0);
+
+
+      licznik.textContent = `1  ${select[0].value} = ${(rates[select[0].value]/ rates[select[1].value]).toFixed(2)} ${select[1].value}`;
+      dontshowCurrency()
     });
+
+
+
     select[1].addEventListener('change', ()=>{
-      input[0].value = (input[1].value * rates[select[0].value]/ rates[select[1].value]).toFixed(2);
-      licznik.textContent = `1  ${select[0].value} = ${(rates[select[0].value]/ rates[select[1].value]).toFixed(2)} ${select[1].value}`
+      convert(1,0);
+      licznik.textContent = `1  ${select[0].value} = ${(rates[select[0].value]/ rates[select[1].value]).toFixed(2)} ${select[1].value}`;
+      dontshowCurrency()
     });
-
-    // licznik.textContent = select[1].textContent;
-
 
 
   };
