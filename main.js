@@ -3,6 +3,7 @@
   const input = document.querySelector('input');
   const result = document.querySelector('.result')
   const dateToday = document.querySelector('.data');
+  const buttonChange = document.querySelector('.change')
   const API_url = "https://api.exchangeratesapi.io/latest";
 
   let html = '';
@@ -65,7 +66,17 @@
       licznik.textContent = `1  ${select[0].value} = ${(rates[select[1].value]/ rates[select[0].value]).toFixed(2)} ${select[1].value}`;
       dontshowCurrency()
     });
+    
+    buttonChange.addEventListener('click', ()=>{
+      // swap values
+    [select[0].value, select[1].value] = [select[1].value, select[0].value];
+    input.value= '';
+    result.textContent= '';
+    
+    licznik.textContent = `1  ${select[0].value} = ${(rates[select[1].value]/ rates[select[0].value]).toFixed(2)} ${select[1].value}`
 
+      
+    });
 
   };
 
