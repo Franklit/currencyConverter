@@ -1,4 +1,61 @@
 body {
   background-color: #808080;
 }
+
+.container {
+  width: 600px;
+  background-color: #bbbbbb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.container .data {
+  width: 100%;
+  text-align: center;
+}
+
+.container input {
+  width: 200px;
+  height: 50px;
+}
+
+.container .choice {
+  background-color: hotpink;
+  height: 50px;
+}
+
+.container .result {
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .result p {
+  color: red;
+}
+
+.container .result span {
+  color: pink;
+}
 /*# sourceMappingURL=style.css.map */

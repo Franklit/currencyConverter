@@ -7,7 +7,7 @@
   const buttonChange = document.querySelector('.change')
   const API_url = "https://api.exchangeratesapi.io/latest";
   let html = '';
-  const licznik = document.querySelector('div p')
+  const licznik = document.querySelector('.licznik')
   
 
 
@@ -37,8 +37,20 @@
 
     function convert(){
       if(input.value !== ""){
-        result.textContent = 
-      (input.value * rates[select[1].value]/ rates[select[0].value]).toFixed(2)};
+      //   result.textContent = 
+      // (input.value * rates[select[1].value]/ rates[select[0].value]).toFixed(2)
+        result.innerHTML = `<p>${input.value} ${select[0].value}</p>
+        <text>=</text>
+        <span>${(input.value * rates[select[1].value]/ rates[select[0].value]).toFixed(2)} ${select[1].value}</span>
+        `
+    
+        // result.textContent = `${input.value} ${select[0].value} = ${(input.value * rates[select[1].value]/ rates[select[0].value]).toFixed(2)} ${select[1].value}`
+      
+    
+    };
+      
+
+
       }
       
       
