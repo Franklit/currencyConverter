@@ -17,193 +17,193 @@ const currencyList = [
     name : "AUD",
     symbol: "&#36;",
     fullName: "Australian dollars",
-    flagUrl : "foto/au.png"
+    flagUrl : "foto/au.gif"
   },
   {
     name : "BGN",
     symbol: "лв",
     fullName: "Bulgarian lev",
-    flagUrl : "foto/bg.png"
+    flagUrl : "foto/bg.gif"
   },
   {
     name : "BRL",
     symbol: "R$",
     fullName: "Brazilian real",
-    flagUrl : "foto/br.png"
+    flagUrl : "foto/br.gif"
   },
   {
     name : "CAD",
     symbol: "&#x24;",
     fullName: "Canadian dollars",
-    flagUrl : "foto/ca.png"
+    flagUrl : "foto/ca.gif"
   },
   {
     name : "CHF",
     symbol: "CHF",
     fullName: "Swiss franc",
-    flagUrl : "foto/ch.png"
+    flagUrl : "foto/ch.gif"
   },
   {
     name : "CNY",
     symbol: "&#20803;",
     fullName: "Chinese yuan",
-    flagUrl : "foto/cn.png"
+    flagUrl : "foto/cn.gif"
   },
   {
     name : "CZK",
     symbol: "Kč",
     fullName: "Czech koruna",
-    flagUrl : "foto/cz.png"
+    flagUrl : "foto/cz.gif"
   },
   {
     name : "DKK",
     symbol: "kr",
     fullName: "Danish krone",
-    flagUrl : "foto/dk.png"
+    flagUrl : "foto/dk.gif"
   },
   {
     name : "GBP",
     symbol: "&#xA3;",
     fullName: "Pounds sterling",
-    flagUrl : "foto/gb.png"
+    flagUrl : "foto/gb.gif"
   },
   {
     name : "HKD",
     symbol: "&#36;",
     fullName: "Hong Kong dollar",
-    flagUrl : "foto/hk.png"
+    flagUrl : "foto/hk.gif"
   },
   {
     name : "HRK",
     symbol: "kn",
     fullName: "Croatian Kuna",
-    flagUrl : "foto/hr.png"
+    flagUrl : "foto/hr.gif"
   },
   {
     name : "HUF",
     symbol: "ft",
     fullName: "Hungarian forint",
-    flagUrl : "foto/hu.png"
+    flagUrl : "foto/hu.gif"
   },
   {
     name : "IDR",
     symbol: "Rp",
     fullName: "Indonesian rupiah",
-    flagUrl : "foto/id.png"
+    flagUrl : "foto/id.gif"
   },
   {
     name : "ILS",
     symbol: "&#x20AA;",
     fullName: "Israeli shekel",
-    flagUrl : "foto/il.png"
+    flagUrl : "foto/il.gif"
   },
   {
     name : "INR",
     symbol: "&#8377;",
     fullName: "Indian rupee",
-    flagUrl : "foto/in.png"
+    flagUrl : "foto/in.gif"
   },
   {
     name : "ISK",
     symbol: "kr",
     fullName: "Icelandic Krona",
-    flagUrl : "foto/is.png"
+    flagUrl : "foto/is.gif"
   },
   {
     name : "JPY",
     symbol: "&#165;",
     fullName: "Japanese yen",
-    flagUrl : "foto/jp.png"
+    flagUrl : "foto/jp.gif"
   },
   {
     name : "KRW",
     symbol: "&#8361;",
     fullName: "South Korean won",
-    flagUrl : "foto/kr.png"
+    flagUrl : "foto/kr.gif"
   },
   {
     name : "MXN",
     symbol: "&#x24;",
     fullName: "Mexican peso",
-    flagUrl : "foto/mx.png"
+    flagUrl : "foto/mx.gif"
   },
   {
     name : "MYR",
     symbol: "RM",
     fullName: "Malaysian ringgit",
-    flagUrl : "foto/my.png"
+    flagUrl : "foto/my.gif"
   },
   {
     name : "NOK",
     symbol: "kr",
     fullName: "Norwegian krone",
-    flagUrl : "foto/no.png"
+    flagUrl : "foto/no.gif"
   },
   {
     name : "NZD",
     symbol: "&#36;",
     fullName: "New Zealand dollar",
-    flagUrl : "foto/nz.png"  
+    flagUrl : "foto/nz.gif"  
   },
   {
     name : "PHP",
     symbol: "&#8369;",
     fullName: "Philippine peso",
-    flagUrl : "foto/ph.png"
+    flagUrl : "foto/ph.gif"
   },
   {
     name : "PLN",
     symbol: "zł",
     fullName: "Polish zloty",
-    flagUrl : "foto/pl.png"
+    flagUrl : "foto/pl.gif"
   },
   {
     name : "RON",
     symbol: "lei",
     fullName: "Romanian leu",
-    flagUrl : "foto/ro.png"
+    flagUrl : "foto/ro.gif"
   },
   {
     name : "RUB",
     symbol: "&#x20BD;",
     fullName: "Russian ruble",
-    flagUrl : "foto/ru.png"
+    flagUrl : "foto/ru.gif"
   },
   {
     name : "SEK",
     symbol: "kr",
     fullName: "Swedish krona",
-    flagUrl : "foto/se.png"
+    flagUrl : "foto/se.gif"
   },
   {
     name : "SGD",
     symbol: "&#36;",
     fullName: "Singapore dollar",
-    flagUrl : "foto/sg.png"
+    flagUrl : "foto/sg.gif"
   },
   {
     name : "THB",
     symbol: "&#3647;",
     fullName: "Thai baht",
-    flagUrl : "foto/th.png"
+    flagUrl : "foto/th.gif"
   },
   {
     name : "TRY",
     symbol: "&#x20BA;",
     fullName: "Turkish lira",
-    flagUrl : "foto/tr.png"
+    flagUrl : "foto/tr.gif"
   },
   {
     name : "USD",
     symbol: "&#x24;",
     fullName: "US dollar",
-    flagUrl : "foto/us.png"
+    flagUrl : "foto/us.gif"
   },
   {
     name : "ZAR",
     symbol: "R",
     fullName: "South african rand",
-    flagUrl : "foto/za.png"
+    flagUrl : "foto/za.gif"
   },
   {
     name : "EUR",
