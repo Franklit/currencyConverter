@@ -8,8 +8,8 @@
   const API_url = "https://api.exchangeratesapi.io/latest";
   let html = '';
   const licznik = document.querySelector('.licznik');
-  const img = document.querySelectorAll('img')
-  const fullName = document.querySelectorAll('.currFUllName p');
+  const img = document.querySelectorAll('.flags')
+  const fullName = document.querySelectorAll('.currFullName .name');
 
 const currencyList = [
 
@@ -269,16 +269,16 @@ const currencyList = [
               img[1].src=element.flagUrl
             };
             if(select[0].value == element.name){
-              fullName[0].innerHTML = element.fullName +" "+ element.symbol;
+              fullName[0].innerHTML =` <div>${element.symbol}</div> ${element.fullName}`;
             }
             if(select[1].value == element.name){
-              fullName[1].innerHTML = element.fullName  +" "+ element.symbol;
+              fullName[1].innerHTML = ` <div>${element.symbol}</div> ${element.fullName}`;
             }
 
 
           });
     };
-    
+    // <div>$</div><br>US dollar 
 
       
       
@@ -327,7 +327,7 @@ const currencyList = [
         // img[0].src = img[1].src
 
         // swap full name
-        [fullName[0].textContent, fullName[1].textContent] = [fullName[1].textContent, fullName[0].textContent] 
+        [fullName[0].innerHTML, fullName[1].innerHTML] = [fullName[1].innerHTML, fullName[0].innerHTML] 
 
         
       });

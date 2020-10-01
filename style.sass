@@ -1,32 +1,154 @@
-body
-    background-color: #808080
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    text-decoration: none
+    list-style: none
+*:focus
+  outline: 0 !important
+    
+$blue : rgba(63, 149, 210, .9)
 
+body
+    background-image: URL("foto/backg.jpg")
+    background-position: center
+    color: white
+    font-family: 'Roboto', sans-serif
+    display: flex
+    justify-content: center
+    align-items: center
 .container
+    margin-top: 50px
     width: 600px
-    background-color: #bbbbbb
+    height: 600px
+    background-color: $blue
+    border-radius: 40px
+    border: 2px solid white
     display: flex
     flex-direction: column
     flex-wrap: wrap
     align-items: center
+    justify-content: space-around
+    .try
+        width: 500px
+        height: 100
     h1
         width: 100%
         text-align: center           
     .data
         width: 100%
         text-align: center
-    input
-        width: 200px
-        height: 50px
+    .amount
+        position: relative
+        &::before
+            content: 'Amount'
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            top: -15px
+            background-color: $blue
+
+            z-index: 120
+        input
+            width: 200px
+            height: 50px
+            border: 1px solid white
+            background-color: $blue
+            border-radius: 10px
+            font-size: 50px
+            color: white
+
     .choice
-        background-color: hotpink
-        height: 50px
+        // background-color: hotpink
+        // height: 50px
+        display: flex
+        align-items: center
+        select 
+            width: 100px
+            height: 30px
+            font-size: 100%
+            
+            font-weight: bold
+            cursor: pointer
+            border-radius: 10px
+            background-color: $blue
+
+            border: none
+            // border-bottom: 2px solid $blue
+            color: white
+            // padding: 10px
+            appearance: none
+            -webkit-appearance: none
+            -moz-appearance: none
+            position: relative
+            padding-left: 35px
+            
+
+            // &::before
+            //     content: ''
+            //     position: absolute
+            //     left: 20px
+            //     top: 10px
+            //     width: 10px
+            //     height: 10px
+            //     background-color: yellow
+            //     z-index: 100
+            // // padding: 10px
+            option
+                // background-color: pink
+        img
+            width: 70px
+            height: 70px
+            border-radius: 100%
+            border: yellow 2px solid
+        button
+            background: none
+            width: 40px
+            border: none
+            i
+                font-size: 20px
+                cursor: pointer
+                color: white
+    .currFullName
+        width: 350px
+        display: flex
+        justify-content: space-around
+        .name
+            // text-align: center   
+            // border-radius: 50%
+            // overflow: hidden
+            div
+                width: 40px
+                height: 40px
+                margin: 0 auto
+
+                border: 1px solid white
+                overflow: hidden
+                color: white
+                border-radius: 50%
+                font-size: 25px
+                text-align: center
+                line-height: 40px
     .result
+        width: 300px
+        min-height: 100px
+        overflow: hidden
+        background-color: $blue
+        border-radius: 20px
         color: white
         text-align: center
         display: flex
         flex-direction: column
+        &::before
+            content: 'Result'
         p
-            color: red
-
+            // color: red
+            font-size: 20px
         span
-            color: pink
+            // color: pink
+            font-size: 30px
+
+
+
+@media screen and ( max-width: 750 )
+    

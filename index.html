@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
+    <link rel="stylesheet" type="text/css" href="css/all.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="container">
-  <h1>Currency Converter</h1>
+  <img class="try"src="foto/top.png" alt="">
+
   <p class="data">data</p>
-  <input>
+
+  <span class="amount"><input value=""></span>
   <div class="choice">
-    <img src="foto/us.png" alt="">
+    <img class="flags" src="foto/us.png" alt="">
     <select></select>
-    <button class="change">zmiana</button>
-    <img src="foto/pl.png" alt="">
+    <button class="change"><i class="fas fa-exchange-alt"></i></button>
     <select></select> 
+    <img class="flags" src="foto/pl.png" alt="">
   </div>
-  <div class="currFUllName">
-    <p class="first">US dollar $</p>
-    <p class="second">Polish zloty zł</p>
+  <div class="currFullName">
+    <div class="name"><div>$</div>US dollar </div>
+    <div class="name"><div>zl</div>Polish zloty </div>
   </div>
 
-  <div class="result">result</div>
+  <div class="result">
+    <!-- <p>1 usd</p>
+    <text>=</text>
+    <span>3.88pln</span> -->
+  </div>
   <div class="licznik"></div>
 </div>
 

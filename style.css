@@ -1,10 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
 body {
-  background-color: #808080;
+  background-image: URL("foto/backg.jpg");
+  background-position: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container {
+  margin-top: 50px;
   width: 600px;
-  background-color: #bbbbbb;
+  height: 600px;
+  background-color: rgba(63, 149, 210, 0.9);
+  border-radius: 40px;
+  border: 2px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,6 +46,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .try {
+  width: 500px;
+  height: 100;
 }
 
 .container h1 {
@@ -27,19 +63,107 @@ body {
 .container .data {
   width: 100%;
   text-align: center;
+  position: relative;
 }
 
-.container input {
+.container .amount {
+  position: relative;
+}
+
+.container .amount::before {
+  content: 'Amount';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -15px;
+  background-color: rgba(63, 149, 210, 0.9);
+  z-index: 120;
+}
+
+.container .amount input {
   width: 200px;
   height: 50px;
+  border: 1px solid white;
+  background-color: rgba(63, 149, 210, 0.9);
+  border-radius: 10px;
+  font-size: 50px;
+  color: white;
 }
 
 .container .choice {
-  background-color: hotpink;
-  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .choice select {
+  width: 100px;
+  height: 30px;
+  font-size: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgba(63, 149, 210, 0.9);
+  border: none;
+  color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  padding-left: 35px;
+}
+
+.container .choice img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: yellow 2px solid;
+}
+
+.container .choice button {
+  background: none;
+  width: 40px;
+  border: none;
+}
+
+.container .choice button i {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.container .currFullName {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .currFullName .name div {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border: 1px solid white;
+  overflow: hidden;
+  color: white;
+  border-radius: 50%;
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px;
 }
 
 .container .result {
+  width: 300px;
+  min-height: 100px;
+  overflow: hidden;
+  background-color: rgba(63, 149, 210, 0.9);
+  border-radius: 20px;
   color: white;
   text-align: center;
   display: -webkit-box;
@@ -51,11 +175,15 @@ body {
           flex-direction: column;
 }
 
+.container .result::before {
+  content: 'Result';
+}
+
 .container .result p {
-  color: red;
+  font-size: 20px;
 }
 
 .container .result span {
-  color: pink;
+  font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */
