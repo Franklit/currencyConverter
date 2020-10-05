@@ -16,12 +16,7 @@ body {
   background-position: center;
   color: white;
   font-family: 'Roboto', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -29,6 +24,10 @@ body {
 
 .container {
   margin-top: 4rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 600px;
   height: 600px;
   background-color: rgba(63, 149, 210, 0.9);
@@ -120,7 +119,7 @@ body {
   width: 5rem;
   height: 5rem;
   border-radius: 100%;
-  border: yellow 2px solid;
+  border: white 2px solid;
 }
 
 .container .choice button {
@@ -205,6 +204,7 @@ body {
             justify-content: center;
     margin: 0;
     border-radius: 0;
+    border: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
