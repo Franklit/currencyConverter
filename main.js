@@ -246,14 +246,14 @@ const currencyList = [
     select[0].innerHTML =html0;
     select[1].innerHTML= html1
     // auto result
-    licznik.textContent = `1  ${select[0].value} = ${(rates[select[1].value]/ rates[select[0].value]).toFixed(2)} ${select[1].value}`
+    licznik.textContent = `1  ${select[0].value} = ${(rates[select[1].value]/ rates[select[0].value]).toFixed(4)} ${select[1].value}`
 
     function convert(){
       if(input.value !== ""){
 
         result.innerHTML = `<p>${input.value} ${select[0].value}</p>
         <text>=</text>
-        <span>${(input.value * rates[select[1].value]/ rates[select[0].value]).toFixed(2)} ${select[1].value}</span>
+        <span>${(input.value * rates[select[1].value]/ rates[select[0].value]).toFixed(4)} ${select[1].value}</span>
         ` };
 
       };
@@ -296,7 +296,7 @@ const currencyList = [
 
       convert();
 
-      licznik.textContent = `1  ${select[0].value} = ${(rates[select[1].value]/ rates[select[0].value]).toFixed(2)} ${select[1].value}`;
+      licznik.textContent = `1  ${select[0].value} = ${(rates[select[1].value]/ rates[select[0].value]).toFixed(4)} ${select[1].value}`;
       changeFlag();
 
 
@@ -308,7 +308,7 @@ const currencyList = [
 
       select[1].addEventListener('change', ()=>{
         convert();
-        licznik.textContent = `1  ${select[0].value} = ${(rates[select[1].value]/ rates[select[0].value]).toFixed(2)} ${select[1].value}`;
+        licznik.textContent = `1  ${select[0].value} = ${(rates[select[1].value]/ rates[select[0].value]).toFixed(4)} ${select[1].value}`;
         changeFlag();
   
       });
@@ -320,7 +320,7 @@ const currencyList = [
       result.textContent= '';
 
       
-      licznik.textContent = `1  ${select[0].value} = ${(rates[select[1].value]/ rates[select[0].value]).toFixed(2)} ${select[1].value}`;
+      licznik.textContent = `1  ${select[0].value} = ${(rates[select[1].value]/ rates[select[0].value]).toFixed(4)} ${select[1].value}`;
       
         // swap img
         [img[0].src, img[1].src ] = [img[1].src, img[0].src ];

@@ -28,8 +28,6 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 600px;
-  height: 600px;
   background-color: rgba(63, 149, 210, 0.9);
   border-radius: 40px;
   border: 2px solid white;
@@ -47,10 +45,11 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 50px;
 }
 
 .container .try {
-  width: 40rem;
+  width: 100%;
 }
 
 .container h1 {
@@ -61,6 +60,7 @@ body {
 .container .data {
   width: 100%;
   padding-bottom: 2rem;
+  padding-top: 1rem;
   text-align: center;
 }
 
@@ -85,7 +85,7 @@ body {
   border: 1px solid white;
   background-color: rgba(63, 149, 210, 0.9);
   border-radius: 10px;
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
 }
 
@@ -176,6 +176,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 10px;
 }
 
 .container .result::before {
@@ -188,6 +189,10 @@ body {
 
 .container .result span {
   font-size: 1.8rem;
+}
+
+.container .licznik {
+  padding: 10px;
 }
 
 @media screen and (max-width: 750px) {

@@ -23,8 +23,8 @@ body
     position: absolute
     left: 50%
     transform: translateX(-50%)
-    width: 600px
-    height: 600px
+    // width: 600px
+    // height: 600px
     background-color: $blue
     border-radius: 40px
     border: 2px solid white
@@ -33,6 +33,7 @@ body
     flex-wrap: wrap
     align-items: center
     justify-content: space-around
+    padding: 50px
     .try
         width: 40rem
         // height: 100
@@ -42,7 +43,9 @@ body
     .data
         width: 100%
         padding-bottom: 2rem
+        padding-top: 1rem
         text-align: center
+        
     .amount
         position: relative
         &::before
@@ -60,7 +63,7 @@ body
             border: 1px solid white
             background-color: $blue
             border-radius: 10px
-            font-size: 3rem
+            font-size: 2rem
             color: white
 
     .choice
@@ -132,14 +135,18 @@ body
         text-align: center
         display: flex
         flex-direction: column
+        padding: 10px
         &::before
             content: 'Result'
         p
-            // color: red
             font-size: 1.2rem
+            // padding: 5px
+
         span
             // color: pink
             font-size: 1.8rem
+    .licznik
+        padding: 10px
 
 
 
